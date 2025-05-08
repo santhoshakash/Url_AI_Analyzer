@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "src/index.tsx",
+      "src": "package.json",
       "use": "@vercel/static-build"
     }
   ],
@@ -17,7 +17,8 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/index.html"
     }
-  ]
+  ],
+  "framework": "create-react-app"
 }
